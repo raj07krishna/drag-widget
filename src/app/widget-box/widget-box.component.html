@@ -1,0 +1,27 @@
+<link
+  href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet"
+/>
+<div class="container">
+  <div class="conatiner-resizable">
+    <div class="container-header">
+      <h3>Widget</h3>
+      <div class="header-btn">
+        <i class="material-icons icon">
+          edit
+        </i>
+        <i class="material-icons icon">
+          delete
+        </i>
+      </div>
+    </div>
+    <div (mousedown)="resizeStart($event)" class="resize top" id="n"></div>
+    <div (mousedown)="resizeStart($event)" class="resize bottom" id="s"></div>
+    <div (mousedown)="resizeStart($event)" class="resize right" id="e"></div>
+    <div (mousedown)="resizeStart($event)" class="resize left" id="w"></div>
+    <div (mousedown)="resizeStart($event)" class="resize-corner top-right" id="ne"></div>
+    <div (mousedown)="resizeStart($event)" class="resize-corner top-left" id="nw"></div>
+    <div (mousedown)="resizeStart($event)" class="resize-corner bottom-right" id="se"></div>
+    <div (mousedown)="resizeStart($event)" class="resize-corner bottom-left" id="sw"></div>
+  </div>
+</div>
