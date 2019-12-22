@@ -3,7 +3,7 @@
   rel="stylesheet"
 />
 <div class="container">
-  <div class="conatiner-resizable">
+  <div class="conatiner-resizable" #resizable>
     <div class="container-header">
       <h3>Widget</h3>
       <div class="header-btn">
@@ -15,13 +15,13 @@
         </i>
       </div>
     </div>
-    <div (mousedown)="resizeStart($event)" class="resize top" id="n"></div>
-    <div (mousedown)="resizeStart($event)" class="resize bottom" id="s"></div>
-    <div (mousedown)="resizeStart($event)" class="resize right" id="e"></div>
-    <div (mousedown)="resizeStart($event)" class="resize left" id="w"></div>
-    <div (mousedown)="resizeStart($event)" class="resize-corner top-right" id="ne"></div>
-    <div (mousedown)="resizeStart($event)" class="resize-corner top-left" id="nw"></div>
-    <div (mousedown)="resizeStart($event)" class="resize-corner bottom-right" id="se"></div>
-    <div (mousedown)="resizeStart($event)" class="resize-corner bottom-left" id="sw"></div>
+    <div (mousedown)="startResizing($event)" class="resize top" id="top-n"></div>
+    <div (mousedown)="startResizing($event)" class="resize bottom" id="bottom-s"></div>
+    <div (mousedown)="startResizing($event)" class="resize right" id="right-e"></div>
+    <div (mousedown)="startResizing($event)" class="resize left" id="left-w"></div>
+    <div (mousedown)="startResizing($event)" class="resize-corner top-right" id="corner-ne"></div>
+    <div (mousedown)="startResizing($event)" class="resize-corner top-left" id="corner-nw"></div>
+    <div (mousedown)="startResizing($event)" class="resize-corner bottom-right" id="corner-se"></div>
+    <div (mousedown)="startResizing($event)" class="resize-corner bottom-left" id="corner-sw"></div>
   </div>
 </div>
